@@ -1,0 +1,23 @@
+.app {
+    height: 100vh;
+}
+
+section {
+    display: grid;
+    place-items: center;
+    align-content: center;
+    height: 100vh;
+    padding: 30px;
+}
+
+.arrow_container {
+    display: grid;
+    place-items: center;
+    position: relative;
+    top: 350px;
+}
+
+.arrow {
+    pointer-events: none;
+    width: 75px;
+}

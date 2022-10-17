@@ -1,0 +1,20 @@
+.projects {
+    display: grid;
+    grid-template-areas: 
+    "1 2 3"
+    ;
+    gap: 20px;
+    grid-template-columns: minmax(400px, 1fr 1fr);
+}
+
+.project_item  {
+    transition: 0.4s;
+}
+
+.project_item > img {
+    width: 750px;
+}
+
+.project_item:hover {
+    transform: scale(1.1);
+}
