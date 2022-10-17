@@ -5,6 +5,28 @@
 
 }
 
-.footer h2 {
+.footer_content {
     text-align: center;
+}
+
+.footer_content h2 {
+    position: relative;
+    top: 15px;
+}
+
+.linkedin {
+    width: 30px;
+    height: 30px;
+    top: 9px;
+    position: relative;
+    margin-left: 2px;
+}
+
+.footer_content a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer_content a:hover {
+    color: dodgerblue;
 }
