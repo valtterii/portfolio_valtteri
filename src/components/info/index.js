@@ -11,9 +11,9 @@ function info(props) {
       </p>
     </div>
       
-    <div className='arrow_container bounce'>
+    {/* <div className='arrow_container bounce'>
         <img className='arrow' src={arrow} />
-    </div>
+    </div> */}
     </>
   )
 }

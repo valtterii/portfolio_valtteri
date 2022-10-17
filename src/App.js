@@ -4,6 +4,7 @@ import Info from './components/info';
 import Skills from './components/skills';
 import Projects from './components/projects';
 import Footer from './components/footer';
+import Navbar from './components/nav'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Particle from './components/Particle';
@@ -39,6 +40,7 @@ function App() {
   return (
     <>
     <Particle />
+    <Navbar />
     <section data-aos="zoom-out-up" data-aos-mirror="true" data-aos-once="false" id='info'>
         <Info title={content.info.title} text={content.info.text}  />
       </section>

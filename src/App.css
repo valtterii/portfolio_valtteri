@@ -3,6 +3,10 @@
     /* scroll-snap-type: y mandatory; */
 }
 
+* {
+    font-family: var(--primaryFont);
+}
+
 section {
     display: grid;
     place-items: center;
@@ -22,5 +26,3 @@ section {
     pointer-events: none;
     width: 75px;
 }
-
-
