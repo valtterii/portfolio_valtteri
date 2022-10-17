@@ -8,7 +8,7 @@
 }
 
 .project_item  {
-    transition: 0.4s;
+    transition: 0.4s !important;
 }
 
 .project_item > img {
@@ -16,5 +16,6 @@
 }
 
 .project_item:hover {
-    transform: scale(1.1);
+    filter: saturate(1.25);
+    filter: brightness(1.15);
 }

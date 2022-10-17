@@ -55,6 +55,7 @@ function Skills(props) {
                 <br />
                 <div data-aos="fade-up" data-aos-mirror="true" data-aos-once="false" data-aos-delay="500" data-aos-duration="500" className='skill-level novice' style={{background: "rgb(226, 144, 21)"}}></div>
                 <span>Novice</span>
+                <br />
             </div>
         </div>
         </>

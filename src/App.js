@@ -14,7 +14,7 @@ function App() {
 
   const content = {
     info: {
-      title: "Moro. ",
+      title: "Moro.",
       text: "Olen Valtteri Karppinen, 18-vuotias ohjelmistokehitystä opiskeleva nuori OSAO:lta. Minun tavoitteena on kehittyä paremmaksi ohjelmoijaksi ja kehittyä alan huippuosaajaksi.",
     },
     skills: {
@@ -31,8 +31,9 @@ function App() {
   TODO:
   navbar palkki alhaalla, josta napit osioihin?
   navbar?
-  footer links: linkedin, etc
-  
+  expand skills section?
+  banner section with my image?
+  FIX project hover effect
   */
   return (
     <>
