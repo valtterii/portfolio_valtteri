@@ -14,7 +14,7 @@ function App() {
 
   const content = {
     info: {
-      title: "Moro.",
+      title: "Moro. ",
       text: "Olen Valtteri Karppinen, 18-vuotias ohjelmistokehitystä opiskeleva nuori OSAO:lta. Minun tavoitteena on kehittyä paremmaksi ohjelmoijaksi ja kehittyä alan huippuosaajaksi.",
     },
     skills: {
