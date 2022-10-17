@@ -6,6 +6,7 @@ import Projects from './components/projects';
 import Footer from './components/footer';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import Particle from './components/Particle';
 
 function App() {
   AOS.init({
@@ -33,12 +34,13 @@ function App() {
   navbar?
   expand skills section?
   banner section with my image?
-  FIX project hover effect
+  Add favicon
   */
   return (
     <>
+    <Particle />
     <section data-aos="zoom-out-up" data-aos-mirror="true" data-aos-once="false" id='info'>
-        <Info title={content.info.title} text={content.info.text} />
+        <Info title={content.info.title} text={content.info.text}  />
       </section>
       <section data-aos="zoom-out-up" data-aos-mirror="true" data-aos-once="false" id='skills'>
         <Skills title={content.skills.title} />
