@@ -12,10 +12,46 @@
     background-color: var(--secondary);
     border-radius: 7px;
     padding: 12px;
-    text-align: center;
-    transition: 0.4s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .box::before {
+    content: ' ';
+    width: 12px;
+    height: 12px;
+    margin-right: 5px;
+    background-color: rgb(62, 226, 21);
+    display: inline-block;
+    border-radius: 5px;
+}
+
+.orange::before {
+    background-color: rgb(226, 144, 21);
+} */
+
+.skill-level {
+    width: 12px;
+    height: 12px;
+    background-color: rgb(62, 226, 21);
+    margin-right: 5px;
+    border-radius: 5px;
+}
+
+.novice {
+    background-color: rgb(226, 144, 21);
+}
+
+.explanations {
+    margin-top: 20px;
+}
+
+.explanations > *{
+    display: inline-block;
+    margin-left: 5px;
 }
 
 .box:hover {
-    transform: scale(1.2);
+    filter: brightness(1.3);
 }
