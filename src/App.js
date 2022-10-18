@@ -31,10 +31,6 @@ function App() {
   https://github.com/michalsnik/aos#animations
 
   TODO:
-  navbar palkki alhaalla, josta napit osioihin?
-  navbar?
-  expand skills section?
-  banner section with my image?
   Add favicon
   */
   return (
