@@ -31,7 +31,8 @@ function App() {
   https://github.com/michalsnik/aos#animations
 
   TODO:
-  Add favicon
+  FIX mobile navbar bug <<<<<<<<
+  add contact section <<<<<<<<<<<<<<
   */
   return (
     <>
