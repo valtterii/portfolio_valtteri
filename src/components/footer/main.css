@@ -30,3 +30,11 @@
 .footer_content a:hover {
     color: dodgerblue;
 }
+
+.footer_links {
+    display: grid;
+}
+
+.footer_links > a {
+    margin: 5px;
+}
