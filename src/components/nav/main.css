@@ -35,3 +35,7 @@
     text-decoration: none;
     color: white;
 }
+
+html,body {
+    overflow-x: hidden !important;
+}

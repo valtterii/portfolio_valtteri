@@ -2,8 +2,11 @@
     section {
         padding: 10px;
     }
+    nav {
+        width: 100%;
+    }
     .nav {
-        width: 330px !important;
+        width: 300px !important;
     }
 }
 
