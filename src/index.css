@@ -3,7 +3,7 @@
 :root {
   --primary: #131316;
   --secondary: #1a1a42;
-  --primaryFont: "Open Sans", sans-serif
+  --primaryFont: "Open Sans", sans-serif; 
 }
 
 html {
