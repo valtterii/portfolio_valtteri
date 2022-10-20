@@ -13,7 +13,7 @@ function Projects(props) {
         <div className='section_content'>
             <h1>{props.title}</h1>
             <div className="projects">
-                <a target={"_blank"} href="https://geronimo.okol.org/~karval/LianaTech/">
+                <a target={"_blank"} href="https://lianatechnologies.netlify.app/">
                     <div data-aos="flip-left" data-aos-mirror="true" data-aos-once="false" className="project_item">
                         <div className='tag_container'>
                             <div className='tag blue'>React.js</div>
