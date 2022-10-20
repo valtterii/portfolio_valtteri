@@ -1,12 +1,40 @@
 .projects {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 20px;
-
+    gap: 30px;
 }
 
 .project_item  {
+    border-radius: 12px;
+    position: relative;
     transition: 0.4s !important;
+}
+
+.tag_container {
+    position: absolute;
+    top: 8px;
+    right: 12px;
+    display: flex;
+    color: white;
+    font-size: 16px;
+    z-index: 10;
+}
+
+.tag_container div {
+    margin-left: 11px;
+}
+
+.tag {
+    padding-inline: 8px;
+    border-radius: 8px;
+}
+
+.tag_container .blue {
+    background: rgb(17, 120, 216);
+}
+
+.tag_container .orange {
+    background: rgb(226, 144, 21);
 }
 
 .project_item > img {
@@ -14,7 +42,7 @@
     border-radius: 12px;
 }
 
-.project_item:hover {
+.project_item img:hover {
     filter: saturate(1.25);
     filter: brightness(1.15);
 }

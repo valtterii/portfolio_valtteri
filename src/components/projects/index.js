@@ -5,7 +5,7 @@ import ebikes from '../../images/ebikes.png'
 import unitec from '../../images/unitec.png'
 import AOS from 'aos';
 
-function projects(props) {
+function Projects(props) {    
     AOS.init({
         
     });
@@ -15,16 +15,25 @@ function projects(props) {
             <div className="projects">
                 <a href="https://geronimo.okol.org/~karval/LianaTech/">
                     <div data-aos="flip-left" data-aos-mirror="true" data-aos-once="false" className="project_item">
+                        <div className='tag_container'>
+                            <div className='tag blue'>React.js</div>
+                        </div>
                         <img src={liana} />
                     </div>
                 </a>
                 <a href="https://geronimo.okol.org/~karval/ebikes/">
                     <div data-aos="flip-left" data-aos-mirror="true" data-aos-once="false" className="project_item">
+                        <div className='tag_container'>
+                            <div style={{}} className='tag orange'>HTML, CSS, JS</div>
+                        </div>
                         <img src={ebikes} />
                     </div>
                 </a>
                 <a href="https://unitec.fi/">
                     <div data-aos="flip-right" data-aos-mirror="true" data-aos-once="false" className="project_item">
+                        <div className='tag_container'>
+                            <div className='tag blue'>WordPress</div>
+                        </div>
                         <img src={unitec} />
                     </div>
                 </a>
@@ -33,4 +42,4 @@ function projects(props) {
     )
 }
 
-export default projects
+export default Projects
