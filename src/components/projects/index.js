@@ -13,7 +13,7 @@ function Projects(props) {
         <div className='section_content'>
             <h1>{props.title}</h1>
             <div className="projects">
-                <a href="https://geronimo.okol.org/~karval/LianaTech/">
+                <a target={"_blank"} href="https://geronimo.okol.org/~karval/LianaTech/">
                     <div data-aos="flip-left" data-aos-mirror="true" data-aos-once="false" className="project_item">
                         <div className='tag_container'>
                             <div className='tag blue'>React.js</div>
@@ -21,7 +21,7 @@ function Projects(props) {
                         <img src={liana} />
                     </div>
                 </a>
-                <a href="https://geronimo.okol.org/~karval/ebikes/">
+                <a target={"_blank"} href="https://geronimo.okol.org/~karval/ebikes/">
                     <div data-aos="flip-left" data-aos-mirror="true" data-aos-once="false" className="project_item">
                         <div className='tag_container'>
                             <div style={{}} className='tag orange'>HTML, CSS, JS</div>
@@ -29,7 +29,7 @@ function Projects(props) {
                         <img src={ebikes} />
                     </div>
                 </a>
-                <a href="https://unitec.fi/">
+                <a target={"_blank"} href="https://unitec.fi/">
                     <div data-aos="flip-right" data-aos-mirror="true" data-aos-once="false" className="project_item">
                         <div className='tag_container'>
                             <div className='tag blue'>WordPress</div>
