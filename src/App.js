@@ -26,18 +26,7 @@ function App() {
     AOS.refresh();
   }, []);
 
-  const isFirefox = typeof InstallTrigger !== 'undefined'; // if browser is firefox
-
-  const offset_setting = {
-    offset: "0", // animation offset
-  }
-
-  if (window.performance && !isFirefox) {
-    if (performance.navigation.type == 1) {
-      offset_setting.offset = "-900";
-      console.log(offset_setting.offset);
-    }
-  }
+  const isFirefox = typeof InstallTrigger !== 'undefined';
   // ^^ if browser is firefox, the animation offset will remain at 0 (default)
   // otherwise we'll set it to something like -900 in order for the animations to work properly on other browsers
 
@@ -61,10 +50,10 @@ function App() {
         <Info title={content.info.title} text={content.info.text}  />
     </section>
     <section id='skills'>
-      <Skills title={content.skills.title} offset={isFirefox ? "0" : offset_setting.offset} />
+      <Skills title={content.skills.title} offset={isFirefox ? "0" : "-900"} />
     </section>
     <section id='projects'>
-      <Projects title={content.projects.title} offset={isFirefox ? "0" : offset_setting.offset} />
+      <Projects title={content.projects.title} offset={isFirefox ? "0" : "-900"} />
     </section>
     <Footer />
     </>
