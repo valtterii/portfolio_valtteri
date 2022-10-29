@@ -1,3 +1,4 @@
+import React, { useEffect } from 'react';
 import './App.css';
 import './responsiveness.css'
 import Info from './components/info';
@@ -10,9 +11,35 @@ import 'aos/dist/aos.css';
 import Particle from './components/Particle';
 
 function App() {
-  AOS.init({
-    duration: 1000,
-  });
+  /* 
+  https://github.com/michalsnik/aos#animations
+  TODO:
+  - add contact section
+  - add english option?
+  - add header & text to projects
+  - FIX refresh anim bug <<<<<<<<<<<
+  */
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // animation durations all set to 1 second
+    });
+    AOS.refresh();
+  }, []);
+
+  const isFirefox = typeof InstallTrigger !== 'undefined'; // if browser is firefox
+
+  const offset_setting = {
+    offset: "0", // animation offset
+  }
+
+  if (window.performance && !isFirefox) {
+    if (performance.navigation.type == 1) {
+      offset_setting.offset = "-900";
+      console.log(offset_setting.offset);
+    }
+  }
+  // ^^ if browser is firefox, the animation offset will remain at 0 (default)
+  // otherwise we'll set it to something like -900 in order for the animations to work properly on other browsers
 
   const content = {
     info: {
@@ -26,29 +53,20 @@ function App() {
       title: "Projektit",
     },
   }
-  /* 
-
-  https://github.com/michalsnik/aos#animations
-
-  TODO:
-  FIX mobile navbar bug <<<<<<<<
-  add contact section <<<<<<<<<<<<<<
-  add english option?
-  */
   return (
     <>
     <Particle />
     <Navbar />
-    <section data-aos="zoom-out-up" data-aos-mirror="true" data-aos-once="false" id='info'>
+    <section data-aos="zoom-out-up" data-aos-offset="0" id='info'>
         <Info title={content.info.title} text={content.info.text}  />
-      </section>
-      <section data-aos="zoom-out-up" data-aos-mirror="true" data-aos-once="false" id='skills'>
-        <Skills title={content.skills.title} />
-      </section>
-      <section data-aos="zoom-in-down" data-aos-offset="400" data-aos-mirror="true" data-aos-once="false" id='projects'>
-        <Projects title={content.projects.title} />
-      </section>
-      <Footer />
+    </section>
+    <section id='skills'>
+      <Skills title={content.skills.title} offset={isFirefox ? "0" : offset_setting.offset} />
+    </section>
+    <section id='projects'>
+      <Projects title={content.projects.title} offset={isFirefox ? "0" : offset_setting.offset} />
+    </section>
+    <Footer />
     </>
   );
 }
