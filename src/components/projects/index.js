@@ -45,7 +45,7 @@ function Projects(props) {
                 <a target={"_blank"} href="https://github.com/valtterii">
                     <div data-aos={animations.fade.animation1} data-aos-offset={props.offset} className="project_item item_last">
                         <div className='suggestion_text'>
-                            Haluatko nähdä loputkin projektit? <br />Klikkaa tästä niin pääset minun Github sivulle.
+                            <p>Haluatko nähdä loputkin projektit? <br /> Klikkaa tästä niin pääset minun Github sivulle.</p>
                         </div>
                     </div>
                 </a>
