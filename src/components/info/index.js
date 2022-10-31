@@ -4,15 +4,16 @@ function info(props) {
   return (
     <>
     <div className='section_content'>
-      <h1>{props.title}</h1>
-      <p>
-        {props.text}
-      </p>
+      <div className='info_content' style={{maxWidth: "1200px"}}>
+        <h1>{props.title}</h1>
+        <p>
+          {props.paragraph1}
+        </p>
+        <p>
+          {props.paragraph2}
+        </p>
+      </div>
     </div>
-      
-    {/* <div className='arrow_container bounce'>
-        <img className='arrow' src={arrow} />
-    </div> */}
     </>
   )
 }

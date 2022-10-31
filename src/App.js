@@ -33,7 +33,8 @@ function App() {
   const content = {
     info: {
       title: "Moro!",
-      text: "Olen Valtteri Karppinen, 18-vuotias ohjelmistokehitystä opiskeleva nuori OSAO:lta. Minun tavoitteena on kehittyä paremmaksi ohjelmoijaksi ja kehittyä alan huippuosaajaksi.",
+      paragraph1: "Olen 18-vuotias juniori-tason ohjelmistokehittäjä. Aloitin tieto- ja viestintätekniikan opinnot OSAO:lla tekniikan yksikössä 5.8.2020 ja valmistun keväällä 2023. Harrastan koodauksen ohella myös maastopyöräilyä, pingistä ja tykkään ulkoilla. Minun tavoitteena on kehittyä paremmaksi ohjelmoijaksi ja kehittyä alan huippuosaajaksi.",
+      paragraph2: "Kokemusta minulla on eniten front-end puolesta. Tuttuja kieliä minulle on HTML, CSS, Javascript (React) ja Python. Tykkään front-endin lisäksi myös testauksesta ja automatisaatiosta. Olen aina valmis sukeltamaan uusiin haasteisiin, sekä tutustumaan uusiin ohjelmistoihin, kieliin ja ihmisiin!",
     },
     skills: {
       title: "Taidot",
@@ -47,7 +48,7 @@ function App() {
     <Particle />
     <Navbar />
     <section data-aos="zoom-out-up" data-aos-offset="0" id='info'>
-        <Info title={content.info.title} text={content.info.text}  />
+        <Info title={content.info.title} paragraph1={content.info.paragraph1} paragraph2={content.info.paragraph2} />
     </section>
     <section id='skills'>
       <Skills title={content.skills.title} offset={isFirefox ? "0" : "-900"} />
