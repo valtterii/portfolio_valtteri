@@ -26,12 +26,8 @@
     .section_content {
         text-align: center;
     }
-    .arrow {
-        bottom: 150px;
-        position: relative;
-    }
     .footer {
-        margin-top: 100px !important;
+        margin-top: 200px !important;
     }
 }
 

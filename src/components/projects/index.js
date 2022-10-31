@@ -13,7 +13,6 @@ function Projects(props) {
         fade: {
             animation1: "fade-right",
         }
-
     }
     return (
         <div className='section_content'>
@@ -41,6 +40,13 @@ function Projects(props) {
                             <div className='tag blue'>WordPress</div>
                         </div>
                         <img src={unitec} />
+                    </div>
+                </a>
+                <a target={"_blank"} href="https://github.com/valtterii">
+                    <div data-aos={animations.fade.animation1} data-aos-offset={props.offset} className="project_item item_last">
+                        <div className='suggestion_text'>
+                            Haluatko nähdä loputkin projektit? <br />Klikkaa tästä niin pääset minun Github sivulle.
+                        </div>
                     </div>
                 </a>
             </div>

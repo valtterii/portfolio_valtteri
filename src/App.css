@@ -1,10 +1,11 @@
 .app {
     height: 100vh;
+    font-family: var(--primaryFont);
     /* scroll-snap-type: y mandatory; */
 }
 
-* {
-    font-family: var(--primaryFont);
+*, *::before, *::after {
+    box-sizing: border-box;
 }
 
 section {

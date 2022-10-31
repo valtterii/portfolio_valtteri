@@ -38,11 +38,36 @@
 }
 
 .project_item > img {
-    width: 750px;
+    width: 650px;
     border-radius: 12px;
 }
 
 .project_item img:hover {
     filter: saturate(1.25);
     filter: brightness(1.15);
+}
+
+.suggestion_text {
+    color: white;
+}
+
+.projects a {
+    text-decoration: none;
+}
+
+.projects .item_last {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+.projects .item_last:hover {
+    background-color: rgba(255, 255, 255, 0.25);
+}
+
+.projects .item_last {
+    padding: 12px;
 }
