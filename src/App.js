@@ -33,7 +33,7 @@ function App() {
   const content = {
     info: {
       title: "Moro!",
-      paragraph1: "Olen 18-vuotias juniori-tason ohjelmistokehittäjä. Aloitin tieto- ja viestintätekniikan opinnot OSAO:lla tekniikan yksikössä 5.8.2020 ja valmistun keväällä 2023. Harrastan koodauksen ohella myös maastopyöräilyä, pingistä ja tykkään ulkoilla. Minun tavoitteena on kehittyä paremmaksi ohjelmoijaksi ja kehittyä alan huippuosaajaksi.",
+      paragraph1: "Olen Valtteri Karppinen, 18-vuotias juniori-tason ohjelmistokehittäjä. Aloitin tieto- ja viestintätekniikan opinnot OSAO:lla tekniikan yksikössä 5.8.2020 ja valmistun keväällä 2023. Harrastan koodauksen ohella myös maastopyöräilyä, pingistä ja tykkään ulkoilla. Minun tavoitteena on kehittyä paremmaksi ohjelmoijaksi ja kehittyä alan huippuosaajaksi.",
       paragraph2: "Kokemusta minulla on eniten front-end puolesta. Tuttuja kieliä minulle on HTML, CSS, Javascript (React) ja Python. Tykkään front-endin lisäksi myös testauksesta ja automatisaatiosta. Olen aina valmis sukeltamaan uusiin haasteisiin, sekä tutustumaan uusiin ohjelmistoihin, kieliin ja ihmisiin!",
     },
     skills: {
