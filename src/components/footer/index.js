@@ -16,7 +16,6 @@ function Footer() {
             Github <img className='logo' src={github} />
           </a>
         </div>
-          <p style={{color: "dodgerblue"}}>valtteri.karppinen04(ät)gmail.com</p>
       </div>
     </footer>
   )
