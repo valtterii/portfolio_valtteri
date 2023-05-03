@@ -1,5 +1,5 @@
 # Portfolio
-Live: https://valtteri.netlify.app/
+Live: https://valtteri.codes/
 
 # Getting Started with Create React App
 
